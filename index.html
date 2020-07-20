@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="style-sheet" href="styles/main.css"/>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+<body>
+
+<h2>SANA SHER CHAUDHARY</h2>
+
+<nav class="w3-bar w3-black">
+  <a href="#home" class="w3-button w3-bar-item">Home</a>
+  <a href="#service" class="w3-button w3-bar-item">Services</a>
+  <a href="#about" class="w3-button w3-bar-item">About</a>
+  <a href="images/resume.pdf" download class="w3-button w3-bar-item">Resume</a>
+</nav>
+
+<section>
+  <img class="mySlides" src="images/img1.jpg" style="width:100%">
+  <img class="mySlides" src="images/img4.jpg" style="width:100%">
+  <img class="mySlides" src="images/img3.jpg" style="width:100%">
+</section>
+
+<!-- Projects -->
+<section id="projects" class="w3-container w3-center w3-content" style="max-width:600px">
+  <h2 class="w3-wide">Projects</h2>
+  <p class="w3-opacity"><i>Projects</i></p>
+  <p class="w3-justify">Software testing is a process, to evaluate the functionality of a software application with an intent to find whether the developed software met the specified requirements or not and to identify the defects to ensure that the product is defect-free in order to produce the quality product </p>
+</section>
+
+<section class="w3-row-padding w3-center w3-light-grey">
+  <article class="w3-third">
+    <p>task1</p>
+    <img src="images/img4.jpg" alt="Random Name" style="width:100%">
+    <p>My project in <a href="https://github.com/SSCH-78"> GitHub</a></p>
+  </article>
+  <article class="w3-third">
+    <p>task2</p>
+    <img src="images/img4.jpg" alt="Random Name" style="width:100%">
+    <p>task</p>
+  </article>
+  <article class="w3-third">
+    <p>task3</p>
+    <img src="images/img4.jpg" alt="Random Name" style="width:100%">
+    <p>task</p>
+  </article>
+</section>
+
+<section id="about" class="w3-container w3-center w3-content" style="max-width:600px">
+  <h2 class="w3-wide">About</h2>
+  <p class="w3-opacity"><i>About</i></p>
+  <p class="w3-justify">When I was kid, I wanted to be a renaissance woman. Never mind just picking computer science, medicine or literature- I wanted to do everything. Always hungry for more, I chose to become software engineer.
+
+    Developing and designing a software or website is the craft of describing exactly what you want a tiny chunk of reality to look and act like. You put down this description in an archaic and symbolic language, and then the Magic happens and you get to see your description play out in its own corner of reality. </p>
+</section>
+<!-- Footer -->
+<footer id="contact" class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <a href="#"><i class="fa fa-facebook-official"></i></a>
+  
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="https://github.com/SSCH-78"><i class="fa fa-github-square"></i></a>
+  <a href="https://www.linkedin.com/in/sanasher"><i class="fa fa-linkedin"></i></a>
+  
+</footer>
+<script>
+  // Automatic Slideshow - change image every 3 seconds
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000);
+  }
+  </script>
+
+</body>
+</html> 
